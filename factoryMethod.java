@@ -1,4 +1,4 @@
-import java.io.PrintStream;
+package factory;
 
 /**
  * Singleton implementation.
@@ -41,7 +41,7 @@ public final class Singleton {
 final class GFG {
 
     /**
-     * Hidden constructor for utility class.
+     * Hidden constructor.
      */
     private GFG() {
     }
