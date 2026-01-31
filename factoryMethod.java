@@ -1,26 +1,57 @@
-import java.io.*;
-class Singleton {
-    // static class
+import java.io.PrintStream;
+
+/**
+ * Singleton implementation.
+ */
+public final class Singleton {
+
+    /** The single instance of the Singleton. */
     private static Singleton instance;
-    private Singleton()
-    {
+
+    /**
+     * Private constructor to prevent instantiation.
+     */
+    private Singleton() {
         System.out.println("Singleton is Instantiated.");
     }
-    public static Singleton getInstance()
-    {
-        if (instance == null)
+
+    /**
+     * Returns the singleton instance.
+     *
+     * @return singleton instance
+     */
+    public static Singleton getInstance() {
+        if (instance == null) {
             instance = new Singleton();
+        }
         return instance;
     }
-    public static void doSomething()
-    {
+
+    /**
+     * Performs an example action.
+     */
+    public static void doSomething() {
         System.out.println("Something is Done.");
     }
 }
 
-class GFG {
-    public static void main(String[] args)
-    {
+/**
+ * Application entry point.
+ */
+final class GFG {
+
+    /**
+     * Hidden constructor for utility class.
+     */
+    private GFG() {
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args command-line arguments
+     */
+    public static void main(final String[] args) {
         Singleton.getInstance().doSomething();
     }
 }
