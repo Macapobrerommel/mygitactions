@@ -3,6 +3,9 @@
  */
 public final class Main {
 
+    /**
+     * Number of rows used to print the star pattern.
+     */
     private static final int NUM = 5;
 
     private Main() {
