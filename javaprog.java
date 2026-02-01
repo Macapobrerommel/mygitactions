@@ -1,17 +1,26 @@
-public class Main   {
+/**
+ * Utility class that prints a star pattern.
+ */
+public final class Main {
 
-    public static void main(String[] args) {
+    private static final int NUM = 5;
 
-        int num = 5;
-        for (int i = 1; i <= num; i++){
-            for (int j = i; j <= num; j++){
+    private Main() {
+        // Prevent instantiation
+    }
+
+    /**
+     * Program entry point.
+     *
+     * @param args command-line arguments
+     */
+    public static void main(final String[] args) {
+
+        for (int i = 1; i <= NUM; i++) {
+            for (int j = i; j <= NUM; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-
-
     }
-
-
 }
